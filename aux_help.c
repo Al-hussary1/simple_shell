@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
  * aux_help_env - Help information for the builtin env
@@ -40,7 +40,6 @@ void aux_help_unsetenv(void)
 	help = "Remove an entry completely from the environment\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
-
 
 /**
  * aux_help_general - Entry point for help information for the help builtin
